@@ -133,9 +133,16 @@ Now, we will setup IntelliJ to point to Apache Tomcat 9 in our run configuration
 
 ![](guide/point_server_to_where_we_download_apache_tomcat_9.png)
 
-6. Select deployment directory to where you cloned the directory (`$parent_directory`) `$parent_directory/WebContext`. Apply run configuration
+6. Set deployment directory, context path, and apply run configurations.
+
+Select deployment directory to where you cloned the directory (`$parent_directory`) `$parent_directory/WebContext`. 
 
 example: the project is cloned at `/Users/gohchangmingclement/Desktop/jsp_tutorial/hello-dao/`. point it to `WebContent`
+
+Set the context path `/jsp-servlet-jdbc-mysql-crud-tutorial`
+
+Apply run configuration
+
 ```
 /Users/gohchangmingclement/Desktop/jsp_tutorial/hello-dao/WebContent
 ```
