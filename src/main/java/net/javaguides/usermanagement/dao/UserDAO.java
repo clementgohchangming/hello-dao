@@ -7,7 +7,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
 import net.javaguides.usermanagement.model.User;
 
 /**
@@ -18,9 +17,10 @@ import net.javaguides.usermanagement.model.User;
  *
  */
 public class UserDAO {
-	private String jdbcURL = "jdbc:mysql://localhost:3306/demo?useSSL=false";
+	// Note, allowPublicKeyRetrieval allows malicious proxies to encode fake messages with your public key and perform man in the middle attacks. we are enabling it here and making it unsafe, only for testing
+	private String jdbcURL = "jdbc:mysql://localhost:3306/demo?allowPublicKeyRetrieval=true&useSSL=false";
 	private String jdbcUsername = "root";
-	private String jdbcPassword = "root";
+	private String jdbcPassword = "!@#$password!@#$";
 
 	private static final String INSERT_USERS_SQL = "INSERT INTO users" + "  (name, email, country) VALUES "
 			+ " (?, ?, ?);";

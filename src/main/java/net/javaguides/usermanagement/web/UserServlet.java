@@ -25,7 +25,7 @@ import net.javaguides.usermanagement.model.User;
 public class UserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private UserDAO userDAO;
-	
+
 	public void init() {
 		userDAO = new UserDAO();
 	}
@@ -89,7 +89,7 @@ public class UserServlet extends HttpServlet {
 
 	}
 
-	private void insertUser(HttpServletRequest request, HttpServletResponse response) 
+	private void insertUser(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException {
 		String name = request.getParameter("name");
 		String email = request.getParameter("email");
@@ -99,7 +99,7 @@ public class UserServlet extends HttpServlet {
 		response.sendRedirect("list");
 	}
 
-	private void updateUser(HttpServletRequest request, HttpServletResponse response) 
+	private void updateUser(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
 		String name = request.getParameter("name");
@@ -111,7 +111,7 @@ public class UserServlet extends HttpServlet {
 		response.sendRedirect("list");
 	}
 
-	private void deleteUser(HttpServletRequest request, HttpServletResponse response) 
+	private void deleteUser(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
 		userDAO.deleteUser(id);
