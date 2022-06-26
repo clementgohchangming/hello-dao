@@ -133,9 +133,14 @@ Now, we will setup IntelliJ to point to Apache Tomcat 9 in our run configuration
 
 ![](guide/point_server_to_where_we_download_apache_tomcat_9.png)
 
-6. Select deployment directory to where you cloned the directory. Apply run configuration
+6. Select deployment directory to where you cloned the directory (`$parent_directory`) `$parent_directory/WebContext`. Apply run configuration
 
-![](guide/select_deployment_directory.png)
+example: the project is cloned at `/Users/gohchangmingclement/Desktop/jsp_tutorial/hello-dao/`. point it to `WebContent`
+```
+/Users/gohchangmingclement/Desktop/jsp_tutorial/hello-dao/WebContent
+```
+
+![](../../select_deployment_directory.png)
 
 ## 6. Maven Compile to download dependencies for project, and compile project to executable bytecode.
 
