@@ -140,7 +140,7 @@ example: the project is cloned at `/Users/gohchangmingclement/Desktop/jsp_tutori
 /Users/gohchangmingclement/Desktop/jsp_tutorial/hello-dao/WebContent
 ```
 
-![](../../select_deployment_directory.png)
+![](guide/select_deployment_directory.png)
 
 ## 6. Maven Compile to download dependencies for project, and compile project to executable bytecode.
 
